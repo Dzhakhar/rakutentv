@@ -1,0 +1,79 @@
+@import "https://staging-apps.pivitglobal.me/cdn-pivitstore/assets/vendor/font-awesome/css/fontawesome-all.min.css";
+
+@keyframes list-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.list-stub {
+    height: 330px;
+    width: 100%;
+    display: flex;
+}
+
+.list {
+    margin-bottom: 40px;
+}
+
+.list__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: opacity 1s;
+    left: 0;
+    animation: list-animation 1s ease-in;
+}
+
+.movies:hover {
+    opacity: 0;
+}
+
+.movie {
+    min-width: 216px;
+    height: 303px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: .3s;
+}
+
+.movie:hover {
+    border: 4px solid #ffe300;
+}
+
+.movies__btn {
+    position: absolute;
+    min-width: 37px;
+    max-width: 37px;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.movies__btn--prev {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(23, 23, 23, .95) 0, transparent 100%);
+}
+
+.movies__btn--next {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(23, 23, 23, .95) 0, transparent 100%);
+}

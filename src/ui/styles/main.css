@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.fas, .fa, .fas:before, .fas:after, .fa:before, .fa:after {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+}
+
+@keyframes app-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.app--fade-out {
+    animation: app-fade-out 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+    overflow: hidden;
+}

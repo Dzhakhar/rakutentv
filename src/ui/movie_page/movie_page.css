@@ -1,0 +1,61 @@
+.content-page {
+
+}
+
+.content-page__title h1 {
+    color: #EDBC00;
+    font-weight: bold;
+}
+
+.content-page__image {
+    height: 675px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.content-page__cover {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(to top, rgba(23, 23, 23, .95) 0, transparent 100%);
+}
+
+.content-page__plot {
+    padding: 20px;
+    font-size: 1.4em;
+    text-align: center;
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 65;
+}
+
+.play-button button {
+    cursor: pointer;
+    font-size: 2em;
+    background: rgba(0, 0, 0, .7);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    color: #A70042;
+    border: 4px solid #A70042;
+    outline: none;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+}

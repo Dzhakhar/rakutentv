@@ -1,0 +1,29 @@
+@keyframes msg-anim {
+    from {
+        opacity: 1;
+        height: 340px;
+    }
+    to {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+.greeting {
+    overflow: hidden;
+    color: #EDBC00;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    animation: msg-anim 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.greeting h1 {
+    font-size: 2.5em;
+    text-align: center;
+    max-width: 1000px;
+    display: flex;
+}

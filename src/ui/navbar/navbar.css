@@ -1,0 +1,23 @@
+.navbar__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    transition-duration: 1s;
+}
+
+.navbar--three-column {
+    justify-content: space-between;
+}
+
+.navbar__right {
+    min-width: 200px;
+    transition-duration: 1s;
+}
+
+.navbar__title {
+    transition-duration: 1s;
+    color: #EDBC00;
+    font-weight: bold;
+    font-size: 1.7em;
+}
