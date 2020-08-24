@@ -4,7 +4,7 @@ import {IContent} from "../../logic/model/movie_list/IContent";
 import {Link} from "react-router-dom";
 import {IViewportParams, ViewportContextConsumer} from "../viewport_provider/ViewportProvider";
 import {useEffect, useState, useRef} from "react";
-import {calcArtworksCountWithinContainer} from "./movieListUtils";
+import {ARTWORK_RATIO, calcArtworksCountWithinContainer, getArtworkWidth} from "./movieListUtils";
 import {calculateContainerWidth} from "../viewport_provider/calculateContainerWidth";
 import "./movie_list.css";
 import {actions} from "../../logic/redux";
@@ -183,10 +183,14 @@ export const MovieList = (props: IMovieListProps) => {
 
                                 {movies.slice(listState.currentPeriod.from, listState.currentPeriod.to)
                                     .map((movie: IContent) => {
+                                        const artworkWidth: number = getArtworkWidth(viewportParams.container.width);
+
                                         return (
                                             <Link title={movie.title} className={"movie"}
                                                   to={`/movie/${movie.id}`} style={{
-                                                backgroundImage: `url(${listState.loadedArtworks[movie.numerical_id] ? movie.images.artwork : placeholderImgUrl})`
+                                                backgroundImage: `url(${listState.loadedArtworks[movie.numerical_id] ? movie.images.artwork : placeholderImgUrl})`,
+                                                minWidth: `${artworkWidth}px`,
+                                                height: `${artworkWidth * ARTWORK_RATIO}px`
                                             }}>
                                             </Link>
                                         );

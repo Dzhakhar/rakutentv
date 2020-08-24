@@ -59,3 +59,43 @@
     width: 125px;
     height: 125px;
 }
+
+@media screen and (max-width: 768px) {
+    .content-page__image {
+        height: 375px;
+    }
+
+    .play-button button {
+        font-size: 1.5em;
+        width: 90px;
+        height: 90px;
+    }
+
+    .content-page__plot {
+        font-size: 1.3em;
+        text-align: left;
+        max-width: unset;
+        margin: 20px auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content-page__image {
+        height: 242px;
+    }
+
+    .play-button button {
+        font-size: 1.4em;
+        width: 80px;
+        height: 80px;
+    }
+
+    .content-page__plot {
+        font-size: 1.1em;
+        text-align: left;
+        max-width: unset;
+        margin: 20px auto;
+        padding: 0;
+    }
+}

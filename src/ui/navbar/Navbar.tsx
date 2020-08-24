@@ -21,7 +21,7 @@ export const Navbar = () => {
                                     <div className={`navbar__container ${isTitleShown && "navbar--three-column"}`}
                                          style={{width: `${viewportParams.container.width}px`}}>
 
-                                        <Link to={"/"}>
+                                        <Link className={"navbar__left"} to={"/"}>
                                             <RakutenLogo/>
                                         </Link>
 

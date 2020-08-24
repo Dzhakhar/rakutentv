@@ -21,3 +21,27 @@
     font-weight: bold;
     font-size: 1.7em;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar__container {
+        flex-direction: column;
+    }
+
+    .navbar__container > * {
+        text-align: center;
+    }
+
+    .navbar__left {
+        margin-bottom: 30px;
+    }
+
+    .navbar__left svg {
+        width: 135px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__left svg {
+        width: 120px;
+    }
+}

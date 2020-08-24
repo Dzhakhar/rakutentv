@@ -1,6 +1,6 @@
 export const RAKUTEN_API_CONFIG = {
     QUERY_PARAMS: "?classification_id=5&device_identifier=web&locale=es&market_code=es",
-    HOST: "https://gizmo.rakuten.tv",
+    HOST: `http://ec2-15-188-239-164.eu-west-3.compute.amazonaws.com/https://gizmo.rakuten.tv`,
     getListEndpoint: function (listName: ListNames) {
         return `${this.HOST}/v3/lists/${listName}${this.QUERY_PARAMS}`;
     },
