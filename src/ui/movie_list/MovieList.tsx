@@ -114,7 +114,7 @@ export const MovieList = (props: IMovieListProps) => {
     useEffect(() => {
         if (listState.nextPeriod) {
             // we need the timeout cause we need to wait until the previous period is disappeared
-            const timeout: number = setTimeout(() => {
+            const timeout: any = setTimeout(() => {
                 setListState({
                     ...listState,
                     currentPeriod: listState.nextPeriod,
