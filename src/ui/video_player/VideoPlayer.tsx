@@ -16,7 +16,7 @@ export const VideoPlayer = () => {
         if (videoRef.current.play) {
             videoRef.current.play()
                 .then(() => {
-                    const timeout: number = setTimeout(() => {
+                    const timeout: any = setTimeout(() => {
                         setIsVideoShown(true);
                         clearTimeout(timeout);
                     }, 2000);
